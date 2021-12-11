@@ -1,9 +1,14 @@
 <h1>Latest headlines...</h1>
-
+<br>
 
 <% Article.all.each do |article| %>
   <a href="<%= article.url %>" target="_blank">
     <%= article.headline %>
   </a>
+  <br>
+  <br>
+  <br>
+  <br>...
+  <br>
   <br>
 <% end %>
