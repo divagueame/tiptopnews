@@ -1,0 +1,15 @@
+<h1>Newspapers#index</h1>
+<p>Find me in app/views/newspapers/index.html.erb</p>
+
+
+<h1>Articles</h1>
+
+<ul>
+  <% @newspapers.each do |newspaper| %>
+    <li>
+      <%= link_to newspaper.newspaperName, newspaper %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Add new newspaper", new_newspaper_path %>
