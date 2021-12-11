@@ -6,10 +6,11 @@
     <%= article.headline %>
   </a>
   <br>
-  <%# Fuente: <%= Newspapers.last %> %>
-  <br>
-  <br>
-  <br>...
-  <br>
-  <br>
+   Fuente:
+   <% source = article.newspaper_id %>
+   <% %>
+  <%= Newspaper.find(source).newspaperName %>
+
+  <br> 
+  <br> 
 <% end %>

@@ -1,6 +1,11 @@
 class ArticlesController < ApplicationController
   def show
     p "Show"
+    p Article.all
+    
+    # @newspaper = Newspaper.find(params[:newspaper_id])
+    # @article = @newspaper.articles.create(article_params)
+    
   end
 
   def create
