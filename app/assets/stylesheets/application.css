@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800;900&display=swap');
+
+ body, html, *, *::before, *::after {
+   font-family: 'Playfair Display', serif;
+   margin: 0;
+   padding: 0;
+ }
+ a {
+  color: black;
+  text-decoration: none; /* no underline */
+}
